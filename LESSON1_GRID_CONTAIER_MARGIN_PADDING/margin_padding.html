@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css">
+  <style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.bg{
+		background-color: #007bff;
+		border: 1px solid #000;
+	}
+  </style>
+  <title>Bootstrap 5 Margin and Padding Example</title>
+</head>
+<body>
+	<!-- Size 
+	.m-1: Tương đương với margin: 0.25rem (~ 4px).
+	.p-2: Tương đương với padding: 0.5rem (~ 8px).
+	.m-3: Tương đương với margin: 1rem (~ 16px).
+	.p-4: Tương đương với padding: 1.5rem (~ 24px).
+	.m-5: Tương đương với margin: 3rem (~ 48px).
+	.p-6: Tương đương với padding: 4.5rem (~ 72px).
+	###margin
+	.mt-1: Tương đương với margin-top: 0.25rem (~ 4px).
+	.mb-2: Tương đương với margin-bottom: 0.5rem (~ 8px).
+	.ms-3: Tương đương với margin-start: 1rem (~ 16px).
+	.me-4: Tương đương với margin-end: 1.5rem (~ 24px).
+	.mx-5: Tương đương với margin-left: 3rem (~ 48px) và margin-right: 3rem (~ 48px).
+	.my-6: Tương đương với margin-top: 4.5rem (~ 72px) và margin-bottom: 4.5rem (~ 72px).
+	###padding
+	.pt-1: Tương đương với padding-top: 0.25rem (~ 4px).
+	.pb-2: Tương đương với padding-bottom: 0.5rem (~ 8px).
+	.ps-3: Tương đương với padding-start: 1rem (~ 16px).
+	.pe-4: Tương đương với padding-end: 1.5rem (~ 24px).
+	.px-5: Tương đương với padding-left: 3rem (~ 48px) và padding-right: 3rem (~ 48px).
+	.py-6: Tương đương với padding-top: 4.5rem (~ 72px) và padding-bottom: 4.5rem (~ 72px).
+-->
+     <!--rem: 1rem = 16px if font-size: 16px-->
+	<!--Example 1-->	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg p-3">.p-3</div>
+				<div class="bg p-4">.p-4</div>
+				<div class="bg p-5">.p-5</div>
+				<div class="bg p-6">.p-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 2-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg pt-3">.pt-3</div>
+				<div class="bg pb-4">.pb-4</div>
+				<div class="bg ps-5">.ps-5</div>
+				<div class="bg pe-6">.pe-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 3-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg px-3">.px-3</div>
+				<div class="bg py-4">.py-4</div>
+				<div class="bg mx-5">.mx-5</div>
+				<div class="bg my-6">.my-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 4-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg m-3">.m-3</div>
+				<div class="bg m-4">.m-4</div>
+				<div class="bg m-5">.m-5</div>
+				<div class="bg m-6">.m-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 5-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg mt-3">.mt-3</div>
+				<div class="bg mb-4">.mb-4</div>
+				<div class="bg ms-5">.ms-5</div>
+				<div class="bg me-6">.me-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 6-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg mx-3">.mx-3</div>
+				<div class="bg my-4">.my-4</div>
+				<div class="bg mx-5">.mx-5</div>
+				<div class="bg my-6">.my-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 7-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg m-3 p-3">.m-3 .p-3</div>
+				<div class="bg m-4 p-4">.m-4 .p-4</div>
+				<div class="bg m-5 p-5">.m-5 .p-5</div>
+				<div class="bg m-6 p-6">.m-6 .p-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 8-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg mt-3 pt-3">.mt-3 .pt-3</div>
+				<div class="bg mb-4 pb-4">.mb-4 .pb-4</div>
+				<div class="bg ms-5 ps-5">.ms-5 .ps-5</div>
+				<div class="bg me-6 pe-6">.me-6 .pe-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 9-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg mx-3 px-3">.mx-3 .px-3</div>
+				<div class="bg my-4 py-4">.my-4 .py-4</div>
+				<div class="bg mx-5 px-5">.mx-5 .px-5</div>
+				<div class="bg my-6 py-6">.my-6 .py-6</div>
+			</div>
+		</div>
+	</div>
+	<!--Example 10-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg m-3 p-3">.m-3 .p-3</div>
+				<div class="bg m-4 p-4">.m-4 .p-4</div>
+				<div class="bg m-5 p-5">.m-5 .p-5</div>
+				<div class="bg m-6 p-6">.m-6 .p-6</div>
+			</div>
+		</div>
+	</div>
+		
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
