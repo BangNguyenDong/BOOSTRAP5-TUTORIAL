@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Bootstrap 5 Breadcrumb Example</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Bootstrap 5 Breadcrumb Example</h1>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Category</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product</li>
+      </ol>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ---------------------------------------------------------------->
+<!-- 
+	Trong ví dụ này, chúng ta sử dụng thẻ <nav> với thuộc tính aria-label="breadcrumb" để chỉ định rằng đây là một breadcrumb. Bên trong <nav>, chúng ta sử dụng thẻ <ol> với lớp breadcrumb để tạo danh sách các mục breadcrumb.
+
+Mỗi mục breadcrumb được đại diện bằng thẻ <li> với lớp breadcrumb-item. Đối với mục cuối cùng, chúng ta sử dụng lớp active để chỉ định rằng đây là mục hiện tại và thuộc tính aria-current="page" để cung cấp thông tin cho trình đọc màn hình.
+
+Trong mỗi mục breadcrumb, chúng ta sử dụng thẻ <a> để tạo liên kết đến trang tương ứng. Bạn có thể thay đổi nội dung và URL của các liên kết để phù hợp với trang web của mình.
+
+Breadcrumb trong Bootstrap 5 sẽ tự động tạo ra các dấu phân cách giữa các mục bằng cách sử dụng ký hiệu "/" mặc định. Bạn có thể tùy chỉnh dấu phân cách bằng cách sử dụng CSS hoặc tùy chỉnh lại mã nguồn Bootstrap.
+ -->
+</body>
+</html>
