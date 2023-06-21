@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collapse</title>
+	<!--Install Boostrap5 CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+	<!--Cú pháp collapse-->
+	<p>
+		<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+	   </p>
+	   <div class="row">
+		<div class="col">
+		  <div class="collapse multi-collapse" id="multiCollapseExample1">
+		    <div class="card card-body">
+			 Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+		    </div>
+		  </div>
+		</div>
+		<div class="col">
+		  <div class="collapse multi-collapse" id="multiCollapseExample2">
+		    <div class="card card-body">
+			 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+		    </div>
+		  </div>
+		</div>
+	   </div>
+
+	<!--Giải thích cú pháp collapse-->
+	<!--Cú pháp collapse:-->
+	<!--data-bs-toggle="collapse" : thuộc tính để bật tắt collapse-->
+	<!--data-bs-target="#multiCollapseExample1" : thuộc tính để xác định collapse nào sẽ bị ảnh hưởng-->
+	<!--aria-expanded="false" : thuộc tính để xác định trạng thái của collapse-->
+	<!--aria-controls="multiCollapseExample1" : thuộc tính để xác định collapse nào sẽ bị ảnh hưởng-->
+
+	<!--Collapse-horizotal-->
+
+	<div class="collapse horizontal collapse-show" id="collapseExample">
+		<div class="card card-body">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="https://picsum.photos/200/200" alt="">
+				</div>
+				<div class="col-sm-9">
+					<h3>Horizontal</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		Toggle horizontal
+	</button>
+
+	<!--Giải thích cú pháp collapse-horizotal-->
+	<!--Cú pháp collapse-horizotal:-->
+	<!--collapse horizontal collapse-show : thuộc tính để bật tắt collapse-->
+	<!--data-bs-target="#collapseExample" : thuộc tính để xác định collapse nào sẽ bị ảnh hưởng-->
+	<!--aria-expanded="false" : thuộc tính để xác định trạng thái của collapse-->
+	<!--aria-controls="collapseExample" : thuộc tính để xác định collapse nào sẽ bị ảnh hưởng-->
+
+	<!--Multiple collapse: Dùng để bật tắt nhiều collapse cùng lúc-->
+	<div class="row">
+		<div class="col">
+		  <div class="collapse multi-collapse" id="multiCollapseExample1">
+		    <div class="card card-body">
+			 Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+		    </div>
+		  </div>
+		</div>
+		<div class="col">
+		  <div class="collapse multi-collapse" id="multiCollapseExample2">
+		    <div class="card card-body">
+			 Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+		    </div>
+		  </div>
+		</div>
+	   </div>
+
+	   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+		Toggle both elements
+	   </button>
+	
+	<!--Giải thích cú pháp multiple collapse-->
+	<!--Cú pháp multiple collapse:-->
+	<!--collapse multi-collapse : thuộc tính để bật tắt collapse-->
+	<!--data-bs-target=".multi-collapse" : thuộc tính để xác định collapse nào sẽ bị ảnh hưởng-->
+	<!--aria-expanded="false" : thuộc tính để xác định trạng thái của collapse-->
+	<!--aria-controls="multiCollapseExample1 multiCollapseExample2" : thuộc tính để xác định collapse nào sẽ bị ảnh hưởng-->
+	
+
+
+	<!--Install Boostrap5 JS-->   
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>	
+</body>
+</html>
