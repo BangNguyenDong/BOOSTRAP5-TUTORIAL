@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdnjs.com/libraries/font-awesome" rel="stylesheet">
+</head>
+<body>
+	<!-- Su dung nav: có 2 cách tạo nav: 1 là dùng ul li, 2 là dùng nav -->
+	<!-- Cách 1: -->
+
+	<ul class="nav justify-content-center bg-danger sticky-top">
+		<li class="nav-item">
+		  <a class="nav-link active" aria-current="page" href="#">Active</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Disabled</a>
+		</li>
+	</ul> 
+
+	<!--Giải thích những class có trong cách 1: -->
+	<!-- 1. class="nav": tạo ra 1 thanh nav -->
+	<!-- 2. class="justify-content-center": căn giữa -->
+	<!-- 3. class="bg-danger": tạo màu nền đỏ cho thanh nav -->
+	<!-- 4. class="nav-item": tạo ra 1 item trong thanh nav -->
+	<!-- 5. class="nav-link": tạo ra 1 link trong item -->
+	<!-- 6. class="active": tạo ra 1 link active -->
+	<!-- 7. class="disabled": tạo ra 1 link disabled -->
+	<!-- 8. class="sticky-top": tạo ra 1 thanh nav cố định ở trên cùng -->
+	
+
+
+	<!-- Cách 2: -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="navbar-collapse collapse show" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Features</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Pricing</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<!-- Giải thích những class có trong cách 2: -->
+	<!-- 1. class="navbar": tạo ra 1 thanh nav -->
+	<!-- 2. class="navbar-expand-lg": tạo ra 1 thanh nav có thể mở rộng -->
+	<!-- 3. class="navbar-light": tạo ra 1 thanh nav có màu sáng -->
+	<!-- 4. class="bg-light": tạo màu nền trắng cho thanh nav -->
+	<!-- 5. class="container-fluid": tạo ra 1 container cho thanh nav -->
+	<!-- 6. class="navbar-brand": tạo ra 1 brand cho thanh nav -->
+	<!-- 7. class="navbar-toggler": tạo ra 1 button để mở rộng thanh nav -->
+	<!-- 8. class="navbar-collapse collapse show": tạo ra 1 thanh nav có thể mở rộng -->
+	<!-- 9. class="navbar-nav": tạo ra 1 item trong thanh nav -->
+	<!-- 10. class="nav-item": tạo ra 1 item trong thanh nav -->
+	<!-- 11. class="nav-link": tạo ra 1 link trong item -->
+	<!-- 12. class="active": tạo ra 1 link active -->
+	<!-- 13. class="disabled": tạo ra 1 link disabled -->
+	<!-- 14. class="collapse": tạo ra 1 thanh nav có thể mở rộng -->
+	<!-- 15. class="show": tạo ra 1 thanh nav có thể mở rộng -->
+	<!-- 16. class="navbar-toggler-icon": tạo ra 1 icon cho button mở rộng thanh nav -->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="navbar-collapse collapse show" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i>Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#"><i class="fas fa-user"></i>Features</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Pricing</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-envelope"></i>Disabled</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+
+	<!-- Navbar brand -->
+	<nav class="navbar bg-light ">
+	  <div class="container-fluid d-flex justify-content-center">
+	    <a class="navbar-brand" href="#">
+	      <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+	      Bootstrap
+	    </a>
+	    <div class="navbar ">
+		<ul class="nav bg-danger">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Active</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Disabled</a>
+			</li>
+		</ul> 
+	   </div>
+	  </div>	
+	</nav>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
