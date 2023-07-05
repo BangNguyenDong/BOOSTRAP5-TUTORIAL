@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Bootstrap 5 là một framework phát triển web phổ biến được sử dụng để xây dựng giao diện người dùng thân thiện và đáp ứng trên các trình duyệt và thiết bị khác nhau. Bootstrap 5 cung cấp nhiều thành phần và công cụ hữu ích để tạo ra các biểu mẫu (forms) tương tác dễ dàng và hấp dẫn. Dưới đây là một số thông tin về cách sử dụng và tùy chỉnh các form trong Bootstrap 5.
+	1. Cấu trúc cơ bản của form:
+	   Để bắt đầu tạo một form, bạn có thể sử dụng thành phần `<form>` của Bootstrap 5. Ví dụ:-->
+	   <form>
+		<!-- Các trường form sẽ được thêm vào đây -->
+	   </form>
+	<!-- 2. Các kiểu input:
+	   Bootstrap 5 hỗ trợ nhiều loại input như text, email, password, number, date, checkbox, radio, vv. Bạn có thể sử dụng các lớp CSS đã được định nghĩa sẵn để tạo ra các kiểu input tương ứng. Ví dụ: -->
+	   <div class="form-group">
+		<label for="name">Tên:</label>
+		<input type="text" class="form-control" id="name" placeholder="Nhập tên">
+	   </div>
+	<!-- form grid: cho phép bạn tạo các trường input theo cột. Ví dụ: -->
+	   <div class="row">
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+		</div>
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+		</div>
+	   </div>
+	<!--Form floating: cho phép bạn tạo các trường input có hiệu ứng động khi người dùng nhập dữ liệu. Ví dụ:-->
+	<div class="form-floating">
+		<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+		<label for="floatingInput">Email address</label>
+	   </div>
+
+	<!-- form inline: cho phép bạn tạo các trường input theo hàng ngang. Ví dụ: -->
+	<div class="form-group col-12 input-group flex-nowrap">
+		<input type="email" class="form-control"
+		   id="myEmail" placeholder="Your Email"><span class="input-group-text" id="addon-wrapping">@gmail.com</span>
+	</div>
+	
+	<!-- 3. Các thành phần khác của form:
+	   Bootstrap 5 cung cấp nhiều thành phần khác để tạo ra các form phức tạp. Một số ví dụ bao gồm:
+	   - Textarea: -->
+		<div class="form-group">
+		  <label for="message">Nội dung:</label>
+		  <textarea class="form-control" id="message" rows="3"></textarea>
+		</div>
+	   <!-- - Select box: -->
+		<div class="form-group">
+		  <label for="country">Quốc gia:</label>
+		  <select class="form-control" id="country">
+		    <option>Việt Nam</option>
+		    <option>Mỹ</option>
+		    <option>Trung Quốc</option>
+		  </select>
+		</div>
+	   <!-- - Checkbox và radio buttons: -->
+		<div class="form-check">
+		  <input class="form-check-input" type="checkbox" value="" id="terms">
+		  <label class="form-check-label" for="terms">
+		    Đồng ý các điều khoản và điều kiện
+		  </label>
+		</div>
+
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+		  <label class="form-check-label" for="male">
+		    Nam
+		  </label>
+		</div>
+	
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+		  <label class="form-check-label" for="female">Nữ</label>
+		</div>
+	<!--5. form control, range -->
+		<div class="form-group">
+		  <label for="formControlRange">Example Range input</label>
+		  <input type="range" class="form-control-range" id="formControlRange">
+		</div>
+	<!--6. form control chức năng chọn tệp -->
+		<div class="form-group">
+		  <label for="formFile" class="form-label">Default file input example</label>
+		  <input class="form-control" type="file" id="formFile">
+		</div>
+	<!-- 7. Các nút submit và nút hủy bỏ:
+	   Để tạo các nút submit và nút hủy bỏ trong form, bạn có thể sử dụng các lớp CSS `btn` và `btn-primary` hoặc các lớp khác của Bootstrap 5. Ví dụ:--> 
+	   <button type="submit" class="btn btn-primary">Gửi</button>
+	   <button type="reset" class="btn btn-secondary">Hủy bỏ</button>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
