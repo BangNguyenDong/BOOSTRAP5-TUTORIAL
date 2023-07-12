@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <title>Bootstrap 5 Popovers Example</title>
+</head>
+<body>
+  
+  <h1>Bootstrap 5 Popovers Example</h1>
+  
+  <!-- Hover Popover -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="hover" title="Popover Title" data-bs-content="Hover popover content">Hover Me</button>
+  
+  <!-- Focus Popover -->
+  <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-trigger="focus" title="Popover Title" data-bs-content="Focus popover content">Focus Me</button>
+  
+  <!-- Click Popover -->
+  <button type="button" class="btn btn-info" data-bs-toggle="popover" data-bs-trigger="click" title="Popover Title" data-bs-content="Click popover content">Click Me</button>
+  
+  <script>
+    // Lấy danh sách các phần tử kích hoạt popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    
+    // Khởi tạo popovers cho mỗi phần tử kích hoạt
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <title>Bootstrap 5 Modal Example</title>
+</head>
+<body>
+  
+  <!-- Button to trigger the modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open Modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>This is the content of the modal.</p>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+  <!-- Trong ví dụ trên, chúng ta có một nút "Open Modal" được định nghĩa bằng thẻ <button>. Khi người dùng nhấp vào nút này, Modal được kích hoạt và hiển thị. Thuộc tính data-bs-toggle="modal" và data-bs-target="#myModal" được sử dụng để xác định rằng nút này sẽ kích hoạt Modal có id là "myModal".
+	Modal được định nghĩa bằng thẻ <div> với lớp "modal fade" và id là "myModal". Nội dung của Modal được đặt trong các phần tử <div> có các lớp tương ứng như "modal-dialog", "modal-content", "modal-header", "modal-body" và "modal-footer".
+	Trên cùng của Modal, chúng ta có một phần tử <h5> để hiển thị tiêu đề Modal và một nút đóng Modal với thuộc tính data-bs-dismiss="modal". Phần thân của Modal chứa nội dung hiển thị cho người dùng và cuối cùng, chúng ta có phần chân Modal chứa các nút "Close" và "Save changes". -->
